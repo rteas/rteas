@@ -1,0 +1,12 @@
+.card-wrapper{
+  dispaly: flex;
+  height: 50vh;
+}
+
+.card-tabs{
+  background-color: blue;
+}
+
+.card-info{
+  background-color: #F0F0F0;
+}

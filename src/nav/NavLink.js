@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './css/TitleCard.css';
+import './css/NavLink.css';
 
-class TitleCard extends Component {
+class NavLink extends Component {
+  constructor(props){
+    super(props);
+  }
 
   render(){
     return (
@@ -11,7 +14,6 @@ class TitleCard extends Component {
       </div>
     );
   }
-
 }
 
-export default TitleCard;
+export default NavLink;
