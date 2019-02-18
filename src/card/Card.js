@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TitleCard from './TitleCard';
 import DetailsCard from './DetailsCard';
+import TabCard from './TabCard';
 import './css/Card.css';
 
 class Card extends Component{
@@ -16,15 +17,16 @@ class Card extends Component{
       <div className="card-wrapper">
         <div className="card-tabs">
           <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+            <TabCard className="card-tab" name="Tab 1" link="/"/>
+            <TabCard className="card-tab" name="Tab 2" link="/"/>
+            <TabCard className="card-tab" name="Tab 3" link="/"/>
+            <TabCard className="card-tab" name="Tab 4" link="/"/>
           </ul>
         </div>
 
         <div className="card-info">
-          <TitleCard name={this.state.title}/>
-          <DetailsCard/>
+          <TitleCard className="card-title" name={this.state.title}/>
+          <DetailsCard className="card-detals" />
         </div>
 
       </div>
