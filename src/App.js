@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Card from './card/Card';
+import TabCard from './card/TabCard';
 import HeaderNav from './nav/headerNav';
 import FooterNav from './nav/footerNav';
 import Nav from './nav/Nav';
@@ -13,7 +14,7 @@ class App extends Component {
   };
 
   componentDidMount(){
-    setTimeout(() => this.setState({ loading: false }), 1500);
+    setTimeout(() => this.setState({ loading: false }), 250);
   }
 
   render() {
@@ -27,8 +28,8 @@ class App extends Component {
     return (
       <div>
         <HeaderNav/>
-        <Nav/>
-        <Card title= "test title"/>
+
+        <Card title= "< work in progress >"/>
         <FooterNav/>
       </div>
     )
@@ -58,4 +59,15 @@ export default App;
   </header>
 </div>
 );
+*/
+
+/* Tab code
+<div className="card-tabs">
+  <ul>
+    <TabCard className="card-tab" name="Tab 1" link="/"/>
+    <TabCard className="card-tab" name="Tab 2" link="/"/>
+    <TabCard className="card-tab" name="Tab 3" link="/"/>
+    <TabCard className="card-tab" name="Tab 4" link="/"/>
+  </ul>
+</div>
 */

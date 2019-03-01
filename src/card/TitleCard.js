@@ -6,8 +6,8 @@ class TitleCard extends Component {
   render(){
     return (
       <div className="title-wrapper">
-        <h2 className="card-title"> props.name = {this.props.name}</h2>
-        <h3 className="card-subtitle">Subtitle</h3>
+        <h2 className="card-title">{this.props.name}</h2>
+        <h3 className="card-subtitle">Welcome!</h3>
       </div>
     );
   }

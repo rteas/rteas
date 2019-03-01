@@ -7,7 +7,7 @@ class FooterNav extends Nav {
   render(){
     return (
       <div className="title-wrapper">
-        <h2> FooterNav here</h2>
+        <h2>Let's keep the world spinin'</h2>
       </div>
     );
   }

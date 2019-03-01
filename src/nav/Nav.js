@@ -10,16 +10,7 @@ class Nav extends Component {
   }
 
 
-  getLinks(){
-    const links = this.state.links;
-    var linkElements;
-    for(var i = 0; i < links.length; i++){
-      return (<li>{links[i]}</li>);
-    }
-  }
-
   render(){
-
     var links = this.state.links.map((link) => {
       return(
         <li>
@@ -34,7 +25,6 @@ class Nav extends Component {
         <ul>
           {links}
         </ul>
-
       </div>
     );
   }
